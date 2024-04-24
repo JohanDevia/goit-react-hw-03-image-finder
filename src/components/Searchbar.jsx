@@ -24,10 +24,7 @@ class Searchbar extends Component {
         <form className="SearchForm " onSubmit={this.handleSubmit}>
           <button type="submit" className="SearchForm-button">
             <span className="SearchForm-button-label ">
-              <FontAwesomeIcon
-                icon="fa-solid fa-magnifying-glass"
-                style={{ color: '#74C0FC' }}
-              />
+              <FontAwesomeIcon icon={faSearch} style={{ color: '#74C0FC' }} />
             </span>
           </button>
 
