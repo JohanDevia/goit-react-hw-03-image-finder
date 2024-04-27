@@ -3,8 +3,11 @@ import '../styles.css';
 
 const ImageGalleryItem = ({ image, openModal }) => {
   return (
-    <li className="gallery-item" onClick={() => openModal(image.largeImageURL)}>
-      <img src={image.webformatURL} alt="" />
+    <li
+      className="ImageGalleryItem"
+      onClick={() => openModal(image.largeImageURL)}
+    >
+      <img className="ImageGalleryItem-image" src={image.webformatURL} alt="" />
     </li>
   );
 };

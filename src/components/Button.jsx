@@ -3,7 +3,7 @@ import '../styles.css';
 
 const Button = ({ onClick, disabled }) => {
   return (
-    <button className="load-more" onClick={onClick} disabled={disabled}>
+    <button className="Button" onClick={onClick} disabled={disabled}>
       Load more
     </button>
   );

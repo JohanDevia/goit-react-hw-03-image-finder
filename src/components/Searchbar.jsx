@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import '../styles.css';
 
 class Searchbar extends Component {
@@ -23,9 +23,12 @@ class Searchbar extends Component {
       <header className="Searchbar">
         <form className="SearchForm " onSubmit={this.handleSubmit}>
           <button type="submit" className="SearchForm-button">
-            <span className="SearchForm-button-label ">
-              <FontAwesomeIcon icon={faSearch} style={{ color: '#74C0FC' }} />
-            </span>
+            <div>
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                style={{ color: '#3f51b5' }}
+              />
+            </div>
           </button>
 
           <input
